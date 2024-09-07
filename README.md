@@ -35,3 +35,48 @@ Obs: a parte do SQL foi feita dentro da plataforma Tripleten, mas as demais tare
   - 'temperature': temperatura quando o registro foi feito
   - 'description': breve descrição das condições meteorológicas
 
+## Dicionário de dados (Python)
+- project_sql_result_01.csv:
+  - 'company_name': nome da empresa de táxi
+  - 'trips_amount': o número de corridas para cada empresa de táxi de 15 a 16 de novembro de 2017
+- project_sql_result_04.csv:
+  - 'dropoff_location_name': bairros de Chicago onde as corridas terminaram
+  - 'avergare_trips': o número médio de viagens que terminaram em cada bairro em novembro de 2017
+- project_sql_result_07.csv: dados sobre viagens do Loop para o Aeroporto Internacional O'Hare
+  - 'start_ts': data e hora do começo da corrida
+  - 'weather_conditions': condições meteorológicas no momento em que a corrida começou
+  - 'duration_seconds': duração da viagem em segundos
+
+## Ferramentas e Bibliotecas utilziadas
+- Pyhton: Linguagem principal utilizada para análise
+- Pandas: Biblioteca para manipulação e análise de dados
+- Matplotlib: Biblioteca para gerar gráficos
+- Numpy: Biblioteca que permite trabalhar com objetos multidimensionais, como matrizes e sequências
+- Math: Biblioteca que permite usar funções matemáticas
+- Seaborn: Biblioteca de visualização de dados
+- Scipy: Bbilioteca que fornece uma manipulação conveniente e rápida de um array N-dimensional
+- Ploty.express: Bbilioteca que permite criar visualizações rápidas e eficientes
+- Datetime: Biblioteca que oferece uma ampla gama de recursos que simplificam a comunicação com a internet
+- BS4: Bbilioteca essencial para realizar Web Scraping com Pyhton
+- Re: Biblioteca que fornece operações de correpsondência de expressões regulares
+
+## Resultados
+- A empresa Flash Cab é uma empresa consolidada com uma alta demanda or viagens
+- Os destinos mais requisitados são River North, Streeterville, West Loop e Loop
+- Foram encontrados algumas corridas com duração igual a zero. O que quer dizer que ou elas foram canceladas ou tiveram problemas na extração de dados
+- Foi possível verificar que a hora do dia tem uma influência significativa na duração da viagem
+- A hipótese foi testada através de um t-test e ela foi rejeitada, confirmando que a duração média das viagens realmente varia nos sabádos chuvosos
+
+## Aprendizados
+- Análise de dados
+- Qualidade dos dados
+- Construção e análise de gráficos
+- Análise de hipóteses
+- SQL
+
+## Como executar o projeto
+- Clone o repositório
+- Navegue até o diretório do projeto
+- Abra o projeto no seu IDE favorito
+- Instale as dependências
+- Execute o script principal
