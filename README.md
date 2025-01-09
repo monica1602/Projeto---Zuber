@@ -60,6 +60,17 @@ Obs: a parte do SQL foi feita dentro da plataforma Tripleten, mas as demais tare
 - BS4: Bbilioteca essencial para realizar Web Scraping com Pyhton
 - Re: Biblioteca que fornece operações de correpsondência de expressões regulares
 
+## Imagens
+
+### Localização de destino (bairro)
+<img src="https://github.com/user-attachments/assets/b4ab8d11-44e6-473b-ad5d-ac865894ee12" alt="Projeto 7" width="200"/>
+
+### Nome da companhia
+<img src="https://github.com/user-attachments/assets/9ea1e371-8bb7-470b-a4f0-6603f64176ba" alt="Projeto 7" width="200"/>
+
+### Hipótese
+<img src="https://github.com/user-attachments/assets/044e40f9-97eb-41df-b476-071f26fe4456" alt="Projeto 7" width="200"/>
+
 ## Resultados
 - A empresa Flash Cab é uma empresa consolidada com uma alta demanda or viagens
 - Os destinos mais requisitados são River North, Streeterville, West Loop e Loop
@@ -74,6 +85,11 @@ Obs: a parte do SQL foi feita dentro da plataforma Tripleten, mas as demais tare
 - Análise de hipóteses
 - SQL
 
+## Contexto real
+- Novas empresas de compartilhamento de caronas que querem entender os principais locais de destino
+- Empresas existente que gostariam de melhorar as experiências dos usuários através de análise de dados
+- Analistas de dados que querem entender melhor a funcionamento e como melhorar os resultados
+  
 ## Como executar o projeto
 - Clone o repositório
 - Navegue até o diretório do projeto
