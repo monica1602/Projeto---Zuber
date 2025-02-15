@@ -1,15 +1,25 @@
 # Projeto Análise de Dados Zuber
 
 ## Descrição do Projeto
-Nesse projeto foi analizado a empresa Zuber, uma empresa de compartilhamento de caronas que está sendo lançado em Chicago. Os Objetivos são encontrar padrões nas informações disponíveis, entender as preferências dos passageiros e o impacto de fatores externos sobre as caronas. Foi trabalhado em um banco de dados, analisando os dados dos concorrentes e testado uma hipótese sobre o impacto do clima na frequência das viagens.
-Obs: a parte do SQL foi feita dentro da plataforma Tripleten, mas as demais tarefas e os códigos estão nos arquivos
+Este projeto envolveu a análise de dados da Zuber, uma empresa de compartilhamento de caronas que está sendo lançada em Chicago. O objetivo principal foi identificar padrões nas informações disponíveis, compreender as preferências dos passageiros e avaliar o impacto de fatores externos, como o clima, na frequência das viagens. A análise foi conduzida utilizando um banco de dados, no qual foram analisados também os dados dos concorrentes, visando uma comparação de desempenho e comportamento. Além disso, foi testada uma hipótese sobre o impacto das condições climáticas na variação da demanda pelas viagens.
+A parte de SQL foi realizada na plataforma Tripleten, enquanto as demais tarefas e implementações de código foram desenvolvidas e armazenadas nos arquivos do projeto.
 
 ## As tarefas são:
 - Revisar a estrutura dos dataframes
-- Modificar os dataframes conforme necessário: tipos de dados, valores ausentes, valores duplicados
-- Análise exploratória de dados
-- Realizar testes de hipóteses:
-  - Hipótese: a duração dos passeios do Loop para o Aeroporto Internacional O'Hare muda nos sábados chuvosos
+  - Inspecionar a organização e tipos de dados para garantir integridade e consistência.
+- Modificar os dataframes conforme necessário
+  - Tipos de dados: Garantir que as colunas possuam os tipos corretos de dados para análise (e.g., converter strings para datas, inteiros ou flutuantes quando necessário).
+  - Valores ausentes: Identificar e tratar valores ausentes, substituindo-os ou removendo-os conforme apropriado.
+  - Valores duplicados: Detectar e remover registros duplicados para evitar distorções nos resultados.
+- Análise exploratória de dados (EDA)
+  - Explorar o conjunto de dados, identificando padrões, relações e distribuições por meio de estatísticas descritivas e visualizações (como histogramas, boxplots e scatterplots).
+  - Investigar a relação entre variáveis, especialmente a duração dos passeios em diferentes condições climáticas.
+- Realizar testes de hipóteses
+  - Hipótese: A duração dos passeios do Loop para o Aeroporto Internacional O'Hare muda nos sábados chuvosos.
+  - Hipótese Nula (H0): Não há diferença significativa na duração dos passeios entre os sábados chuvosos e não chuvosos.
+  - Hipótese Alternativa (H1): A duração dos passeios do Loop para o Aeroporto Internacional O'Hare é significativamente diferente nos sábados chuvosos.
+  - Método de Teste: Selecionar o teste adequado (como o teste t para duas amostras independentes ou o teste de Mann-Whitney), dependendo da distribuição dos dados.
+  - Nível de Significância: Definir um valor de α (geralmente 0,05) para determinar se a diferença observada é estatisticamente significativa
 
  ## Dicionário de dados (SQL)
  Um banco de dados com informações sobre viagens de táxi em Chicago
@@ -48,17 +58,17 @@ Obs: a parte do SQL foi feita dentro da plataforma Tripleten, mas as demais tare
   - 'duration_seconds': duração da viagem em segundos
 
 ## Ferramentas e Bibliotecas utilziadas
-- Pyhton: Linguagem principal utilizada para análise
-- Pandas: Biblioteca para manipulação e análise de dados
-- Matplotlib: Biblioteca para gerar gráficos
-- Numpy: Biblioteca que permite trabalhar com objetos multidimensionais, como matrizes e sequências
-- Math: Biblioteca que permite usar funções matemáticas
-- Seaborn: Biblioteca de visualização de dados
-- Scipy: Bbilioteca que fornece uma manipulação conveniente e rápida de um array N-dimensional
-- Ploty.express: Bbilioteca que permite criar visualizações rápidas e eficientes
-- Datetime: Biblioteca que oferece uma ampla gama de recursos que simplificam a comunicação com a internet
-- BS4: Bbilioteca essencial para realizar Web Scraping com Pyhton
-- Re: Biblioteca que fornece operações de correpsondência de expressões regulares
+- Python: Linguagem de programação principal utilizada para análise de dados, oferecendo uma ampla gama de bibliotecas e recursos para manipulação, visualização e modelagem de dados.
+- Pandas: Biblioteca essencial para manipulação e análise de dados estruturados, como DataFrames, permitindo realizar operações como filtragem, agregação e transformação de dados.
+- Matplotlib: Biblioteca fundamental para a criação de gráficos e visualizações estáticas em Python, amplamente utilizada para gerar gráficos de barras, linhas, dispersão, entre outros.
+- NumPy: Biblioteca poderosa para computação científica em Python, que permite trabalhar com arrays multidimensionais e realizar operações matemáticas eficientes em grandes volumes de dados.
+- Math: Biblioteca que fornece funções matemáticas básicas, como operações trigonométricas, exponenciais, logaritmos e arredondamento, facilitando cálculos matemáticos precisos.
+- Seaborn: Biblioteca de visualização de dados baseada em Matplotlib, projetada para criar gráficos estatísticos atraentes e informativos com menos código.
+- SciPy: Biblioteca voltada para operações científicas avançadas, complementando o NumPy, com funções de otimização, integração, álgebra linear e estatísticas.
+- Plotly Express: Biblioteca que permite criar visualizações interativas rápidas e eficazes com foco na facilidade de uso e na criação de gráficos dinâmicos para análise exploratória de dados.
+- Datetime: Biblioteca que fornece funcionalidades robustas para manipulação de datas e horas, oferecendo suporte a cálculos e conversões de datas, além de simplificar operações temporais complexas.
+- BeautifulSoup (BS4): Biblioteca indispensável para realizar Web Scraping em Python, permitindo extrair e parsear dados de páginas web de forma simples e eficiente.
+- Re: Biblioteca que oferece operações para correspondência de expressões regulares, facilitando a busca e manipulação de padrões de texto em strings.
 
 ## Imagens
 
@@ -72,23 +82,23 @@ Obs: a parte do SQL foi feita dentro da plataforma Tripleten, mas as demais tare
 <img src="https://github.com/user-attachments/assets/044e40f9-97eb-41df-b476-071f26fe4456" alt="Projeto 7" width="200"/>
 
 ## Resultados
-- A empresa Flash Cab é uma empresa consolidada com uma alta demanda or viagens
-- Os destinos mais requisitados são River North, Streeterville, West Loop e Loop
-- Foram encontrados algumas corridas com duração igual a zero. O que quer dizer que ou elas foram canceladas ou tiveram problemas na extração de dados
-- Foi possível verificar que a hora do dia tem uma influência significativa na duração da viagem
-- A hipótese foi testada através de um t-test e ela foi rejeitada, confirmando que a duração média das viagens realmente varia nos sabádos chuvosos
+- A empresa Flash Cab: Empresa consolidada e com alta demanda por viagens de táxi, que atende a diversos destinos em uma cidade movimentada.
+- Destinos mais requisitados: Os destinos mais frequentes para corridas incluem áreas populares como River North, Streeterville, West Loop e Loop.
+- Corridas com duração igual a zero: Foram identificadas corridas com duração registrada como zero, o que pode indicar que as corridas foram canceladas ou houve falhas na coleta ou extração dos dados.
+- Influência da hora do dia na duração das viagens: Observou-se que a hora do dia tem um impacto significativo na duração das viagens, com variações evidentes ao longo do dia, sugerindo que fatores como tráfego e horários de pico influenciam as corridas.
+- Teste da hipótese: A hipótese de que a duração média das viagens muda nos sábados chuvosos foi testada através de um t-test. O resultado foi a rejeição da hipótese nula, confirmando que a duração média das viagens é significativamente diferente nos sábados chuvosos, o que pode estar relacionado ao impacto das condições climáticas no tráfego e no comportamento dos motoristas.
 
 ## Aprendizados
-- Análise de dados
-- Qualidade dos dados
-- Construção e análise de gráficos
-- Análise de hipóteses
-- SQL
-
+- Análise de dados: Processamento e avaliação das informações disponíveis, identificando padrões e comportamentos dos dados para gerar insights úteis.
+- Qualidade dos dados: Avaliação e tratamento de dados para garantir que estejam completos, precisos e consistentes. Isso inclui o tratamento de valores ausentes, duplicados e a conversão correta de tipos de dados.
+- Construção e análise de gráficos: Desenvolvimento de visualizações gráficas para facilitar a interpretação dos dados, como gráficos de dispersão, histograma e boxplot, ajudando a identificar tendências, padrões e outliers.
+- Análise de hipóteses: Formulação e verificação de hipóteses através de testes estatísticos, como o t-test, para confirmar ou refutar suposições sobre os dados, garantindo a validade das conclusões.
+- SQL: Uso de SQL para consultar e manipular bancos de dados, extraindo e transformando dados necessários para a análise, como selecionar, filtrar, agrupar e agregar informações de diversas tabelas.
+  
 ## Contexto real
-- Novas empresas de compartilhamento de caronas que querem entender os principais locais de destino
-- Empresas existente que gostariam de melhorar as experiências dos usuários através de análise de dados
-- Analistas de dados que querem entender melhor a funcionamento e como melhorar os resultados
+- Empresas emergentes no setor de compartilhamento de caronas que desejam analisar os principais destinos de viagem para otimizar seus serviços e estratégias de mercado.
+- Empresas consolidadas que buscam aprimorar a experiência do usuário por meio de análises de dados, visando melhorar a satisfação do cliente e a eficiência operacional.
+- Profissionais de análise de dados que desejam compreender melhor os padrões operacionais de sistemas de compartilhamento de caronas e identificar oportunidades para otimização e aumento de resultados.
   
 ## Como executar o projeto
 - Clone o repositório
