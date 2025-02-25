@@ -1,4 +1,4 @@
-# Projeto Análise de Dados Zuber
+# Projeto Análise de Dados - Zuber
 
 ## Descrição do Projeto
 Este projeto envolveu a análise de dados da Zuber, uma empresa de compartilhamento de caronas que está sendo lançada em Chicago. O objetivo principal foi identificar padrões nas informações disponíveis, compreender as preferências dos passageiros e avaliar o impacto de fatores externos, como o clima, na frequência das viagens. A análise foi conduzida utilizando um banco de dados, no qual foram analisados também os dados dos concorrentes, visando uma comparação de desempenho e comportamento. Além disso, foi testada uma hipótese sobre o impacto das condições climáticas na variação da demanda pelas viagens.
@@ -61,7 +61,7 @@ A parte de SQL foi realizada na plataforma Tripleten, enquanto as demais tarefas
 - Python: Linguagem de programação principal utilizada para análise de dados, oferecendo uma ampla gama de bibliotecas e recursos para manipulação, visualização e modelagem de dados.
 - Pandas: Biblioteca essencial para manipulação e análise de dados estruturados, como DataFrames, permitindo realizar operações como filtragem, agregação e transformação de dados.
 - Matplotlib: Biblioteca fundamental para a criação de gráficos e visualizações estáticas em Python, amplamente utilizada para gerar gráficos de barras, linhas, dispersão, entre outros.
-- NumPy: Biblioteca poderosa para computação científica em Python, que permite trabalhar com arrays multidimensionais e realizar operações matemáticas eficientes em grandes volumes de dados.
+- NumPy: Biblioteca que simplifica o manuseio de vetores e matrizes, acelerando cálculos matemáticos e estatísticos nos dados.
 - Math: Biblioteca que fornece funções matemáticas básicas, como operações trigonométricas, exponenciais, logaritmos e arredondamento, facilitando cálculos matemáticos precisos.
 - Seaborn: Biblioteca de visualização de dados baseada em Matplotlib, projetada para criar gráficos estatísticos atraentes e informativos com menos código.
 - SciPy: Biblioteca voltada para operações científicas avançadas, complementando o NumPy, com funções de otimização, integração, álgebra linear e estatísticas.
@@ -72,14 +72,14 @@ A parte de SQL foi realizada na plataforma Tripleten, enquanto as demais tarefas
 
 ## Imagens
 
-### Localização de destino (bairro)
-<img src="https://github.com/user-attachments/assets/b4ab8d11-44e6-473b-ad5d-ac865894ee12" alt="Projeto 7" width="200"/>
+### Gráfico - Localização de destino (bairro)
+<img src="https://github.com/user-attachments/assets/b4ab8d11-44e6-473b-ad5d-ac865894ee12" alt="Projeto 7" width="800"/>
 
-### Nome da companhia
-<img src="https://github.com/user-attachments/assets/9ea1e371-8bb7-470b-a4f0-6603f64176ba" alt="Projeto 7" width="200"/>
+### Gráfico - Nome da companhia
+<img src="https://github.com/user-attachments/assets/9ea1e371-8bb7-470b-a4f0-6603f64176ba" alt="Projeto 7" width="800"/>
 
-### Hipótese
-<img src="https://github.com/user-attachments/assets/044e40f9-97eb-41df-b476-071f26fe4456" alt="Projeto 7" width="200"/>
+### Código - Hipótese
+<img src="https://github.com/user-attachments/assets/044e40f9-97eb-41df-b476-071f26fe4456" alt="Projeto 7" width="1000"/>
 
 ## Resultados
 - A empresa Flash Cab: Empresa consolidada e com alta demanda por viagens de táxi, que atende a diversos destinos em uma cidade movimentada.
